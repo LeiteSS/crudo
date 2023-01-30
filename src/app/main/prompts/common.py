@@ -330,7 +330,7 @@ class InquirerControl(FormattedTextControl):
 
     # Private Operations
 
-    def _is_selected():
+    def _is_selected(self, choice: Choice):
         if isinstance(self.default, Choice):
             compare_default = self.default == choice
         else:
@@ -374,14 +374,14 @@ class InquirerControl(FormattedTextControl):
         if pointed_at is not None:
           self.pointed_at = pointed_at
         
-        for index, choice in enumerate(choices):
-            choice = Choice.build(choice)
+        for i, c in enumerate(choices):
+            choice = Choice.build(c)
 
             if self._is_selected(choice):
                 self.selected_options.append(choice.value)
             
             if pointed_at is None and not choice.disabled:
-                self.pointed_at = pointed_at = index
+                self.pointed_at = pointed_at = i
             
             self.choices.append(choice)
     
@@ -500,7 +500,7 @@ class InquirerControl(FormattedTextControl):
         self.pointed_at = (self.pointed_at + 1) % self.choice_count
     
     def get_pointed_at(self) -> Choice:
-        return self.choice[self.pointed_at]
+        return self.choices[self.pointed_at]
     
     def get_selected_values(self) -> List[Choice]:
         return [

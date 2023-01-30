@@ -165,7 +165,7 @@ def select(
     
     return tokens
   
-  layout = common.create_inquirer_layout(inquireControl, get_prompt_tokens, **kwargs)
+  layout = common.create_inquirer_layout(inquirerControl, get_prompt_tokens, **kwargs)
 
   bindings = KeyBindings()
 
