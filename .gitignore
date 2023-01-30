@@ -1,6 +1,1 @@
-src/app/main/__pycache__
-src/app/main/prompts/__pycache__
-src/app/main/model/__pycache__
-src/app/main/constants/__pycache__
-src/app/main/utils/__pycache__
-src/app/tests/__pycache__
+__pycache__/
