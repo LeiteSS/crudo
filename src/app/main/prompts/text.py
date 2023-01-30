@@ -1,10 +1,3 @@
-"""
-    @Author: Silas S Leite
-    @Date: January 29, 2023 11:45
-    @Description: Prompt the user for some text input to answer some question
-"""
-
-# Data Structures
 from typing import Any
 from typing import List
 from typing import Optional

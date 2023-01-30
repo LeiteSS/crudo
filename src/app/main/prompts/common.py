@@ -1,9 +1,3 @@
-"""
-  @Author: Silas S Leite
-  @Date: January 29, 2023
-  @Description: Some functions those are done often during the CLI usage
-"""
-
 # Inspect live object - It can help you examine the contnts of a class, retrieve the source
 # code of a method, extract and format the argument list for a function, or get all the 
 # information you need to display a detailed traceback.

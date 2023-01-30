@@ -1,9 +1,3 @@
-"""
-  @Author: Silas S Leite
-  @Date: January 29, 2023
-  @Description: Some constants that defines some symbols and messages show in the prompts
-"""
-
 from main import Style
 
 YES = "Yes"
