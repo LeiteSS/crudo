@@ -111,8 +111,11 @@ class Choice:
               self.auto_shortcut = shortcut_key
               self.shortcut_key = None
           else:
-              self.shortcut_key = None
-              self.auto_shortcut = True
+              self.shortcut_key = str(shortcut_key)
+              self.auto_shortcut = False
+      else:
+            self.shortcut_key = None
+            self.auto_shortcut = True
 
   @staticmethod
   def build(choice: Union[str, "Choice", Dict[str, Any]]) -> "Choice":
@@ -212,32 +215,6 @@ class InquirerControl(FormattedTextControl):
       "x",
       "y",
       "z",
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V",
-      "W",
-      "X",
-      "Y",
-      "Z"
     ]
 
     choices: List[Choice]
@@ -253,7 +230,7 @@ class InquirerControl(FormattedTextControl):
     def __init__(
       self,
       choices: Sequence[Union[str, Choice, Dict[str, Any]]],
-      default: Optional[Union[str, Choice, dict[str, Any]]] = None,
+      default: Optional[Union[str, Choice, Dict[str, Any]]] = None,
       pointer: Optional[str] = DEFAULT_SELECTED_POINTER,
       use_indicator: bool = True,
       use_shortcuts: bool = False,
@@ -270,7 +247,7 @@ class InquirerControl(FormattedTextControl):
         self.pointer = pointer
 
         if isinstance(default, Choice):
-            default = defaulf.value
+            default = default.value
         
         choices_values = [
             choice.value for choice in choices if isinstance(choice, Choice)
@@ -300,7 +277,7 @@ class InquirerControl(FormattedTextControl):
         
         else:
             raise ValueError(
-              f"Invalid `initial_choice` value passed. The value"
+              f"Invalid `initial_choice` value passed. The value "
               f"(`{initial_choice}`) does not exist in "
               f"the set of choices. Please make sure the initial value is "
               f"one of the available choices."
@@ -325,6 +302,7 @@ class InquirerControl(FormattedTextControl):
     
     # pythonic way to use getters and setters in object-oriented programming;
     # source: https://www.programiz.com/python-programming/property
+    @property
     def choice_count(self) -> int:
         return len(self.choices)
 
@@ -396,14 +374,14 @@ class InquirerControl(FormattedTextControl):
 
           if index == self.pointed_at:
               if self.pointer is not None:
-                  tokens.append(("class:ponter", " {}".format(self.pointer)))
+                  tokens.append(("class:pointer", " {} ".format(self.pointer)))
               else:
                   tokens.append(("class:text", " " * 3))
               
               tokens.append(("[SetCursorPosition]", ""))
           else:
               pointer_length = len(self.pointer) if self.pointer is not None else 1
-              token.append(("class:text", " " * (2 + pointer_length)))
+              tokens.append(("class:text", " " * (2 + pointer_length)))
           
           if isinstance(choice, Separator):
               tokens.append(("class:separator", "{}".format(choice.title)))
@@ -470,13 +448,13 @@ class InquirerControl(FormattedTextControl):
       if self.show_selected:
             current = self.get_pointed_at()
 
-            answer = current.get_shortcut_title() if self.use_shortcuts else ""
+            answer = current.get_shortcut_key_title() if self.use_shortcuts else ""
 
             answer += (
                 current.title if isinstance(current.title, str) else current.title[0][1]
             )
 
-            tokens.append(("class:text", " Answer: {}".format(answer)))
+            tokens.append(("class:text", "  Answer: {}".format(answer)))
       else:
           tokens.pop() # Remove last newline
       
@@ -567,7 +545,7 @@ def print_formatted_text(text: str, style: Optional[str] = None, **kwargs: Any) 
             prompt :ref:`toolkit style strings <prompt_toolkit:styling>`.
     """
     if style is not None:
-        text_style = Style(["text", style])
+        text_style = Style([("text", style)])
     else:
         text_style = DEFAULT_STYLE
     
@@ -592,6 +570,3 @@ def _fix_unessary_blank_lines(promptSession: PromptSession) -> None:
     # empty lines in selections
     default_buffer_window.dont_extend_height = Always()
     default_buffer_window.always_hide_cursor = Always()
-      
-
-

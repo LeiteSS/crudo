@@ -102,7 +102,7 @@ def checkbox(
       #Disable the default inverted colours bottom-toolbar behaviour (for
       # the error message). However it can be re-enabled with a custom
       # style.
-      Style(["bottom-toolbar", "noreverse"]),
+      Style([("bottom-toolbar", "noreverse")]),
       style,
     ]
   )
@@ -257,7 +257,7 @@ def checkbox(
     bindings.add(Keys.ControlP, eager=True)(move_cursor_up)
   
   # Keys.ControlM
-  @bindings.add(Keys.ControlX, eager=True)
+  @bindings.add(Keys.ControlM, eager=True)
   def set_answer(event):
     selected_values = get_selected_values()
     inquirerControl.submission_attempted = True
@@ -266,7 +266,7 @@ def checkbox(
       inquirerControl.is_answered = True
       event.app.exit(result=selected_values)
   
-  @binginds.add(Keys.Any)
+  @bindings.add(Keys.Any)
   def other(_event):
     """Disallow inserting other text."""
 

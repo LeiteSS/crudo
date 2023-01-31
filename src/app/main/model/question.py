@@ -61,7 +61,7 @@ class Question:
         try:
             return self.unsafe_ask(patch_stdout)
         except KeyboardInterrupt:
-            print("\n{}\n".fromt(cancel_msg))
+            print("\n{}\n".format(cancel_msg))
             return None
     
     def unsafe_ask(self, patch_stdout: bool = False) -> Any:

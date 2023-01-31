@@ -22,7 +22,7 @@ class PromptParameterException(ValueError):
 
 def prompt(
   questions: Union[Dict[str, Any], Iterable[Mapping[str, Any]]],
-  answer: Optional[Mapping[str, Any]] = None,
+  answers: Optional[Mapping[str, Any]] = None,
   patch_stdout: bool = False,
   true_color: bool = False,
   cancel_msg: str = DEFAULT_CANCEL_MESSAGE,
@@ -77,7 +77,7 @@ def prompt(
     """
     try:
         return unsafe_prompt(questions, answers, patch_stdout, true_color, **kwargs)
-    except keyboardInterrupt:
+    except KeyboardInterrupt:
         print("")
         print(cancel_msg)
         print("")

@@ -46,7 +46,7 @@ class WordCompleter(Completer):
     document: Document, 
     complete_event: CompleteEvent
   ) -> Iterable[Completion]:
-    choices = self._choice()
+    choices = self._choices()
 
     word_before_cursor = document.text_before_cursor
 
