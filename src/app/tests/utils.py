@@ -70,7 +70,7 @@ def pathched_prompt(questions, text, **kwargs):
 
 		def run(inp):
 				inp.send_text(text)
-				result = prompt(question, input=inp, output=DummyOutput(), **kwargs)
+				result = prompt(questions, input=inp, output=DummyOutput(), **kwargs)
 
 				return result
 

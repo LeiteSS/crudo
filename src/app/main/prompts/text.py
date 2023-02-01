@@ -72,7 +72,7 @@ def text(
     validator = build_validator(validate)
 
     if instruction is None and multiline:
-        instruction = INSTRUCTION_MULTILINE
+        instruction = FINISH_INSTRUCTION_MULTILINE
     
     def get_prompt_tokens() -> List[Tuple[str, str]]:
       result = [("class:qmark", qmark), ("class:question", " {} ".format(message))]

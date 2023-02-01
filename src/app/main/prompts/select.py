@@ -32,7 +32,7 @@ def select(
   use_shortcuts: bool = False,
   use_arrow_keys: bool = True,
   use_indicator: bool = False,
-  user_ws_keys: bool = True,
+  use_ws_keys: bool = True,
   use_emacs_keys: bool = True,
   show_selected: bool = False,
   instruction: Optional[str] = None,
@@ -95,7 +95,7 @@ def select(
   Returns:
       :class:`Question`: Question instance, ready to be prompted (using ``.ask()``).
   """
-  if not (use_arrow_keys or use_shortcuts or user_ws_keys or use_emacs_keys):
+  if not (use_arrow_keys or use_shortcuts or use_ws_keys or use_emacs_keys):
     raise ValueError(
       (
         "Some option to move the selection is required. "
@@ -103,7 +103,7 @@ def select(
       )
     )
   
-  if use_shortcuts and user_ws_keys:
+  if use_shortcuts and use_ws_keys:
     if any(getattr(choice, "shortcut_key", "") in ["j", "k"] for choice in choices):
       raise ValueError(
         "A choice is trying to register w/s as a "
@@ -211,7 +211,7 @@ def select(
     bindings.add(Keys.Down, eager=True)(move_cursor_down)
     bindings.add(Keys.Up, eager=True)(move_cursor_up)
   
-  if user_ws_keys:
+  if use_ws_keys:
     bindings.add("s", eager=True)(move_cursor_down)
     bindings.add("w", eager=True)(move_cursor_up)
   

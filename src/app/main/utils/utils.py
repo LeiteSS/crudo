@@ -51,7 +51,7 @@ def required_arguments(func: Callable[..., Any]) -> List[str]:
     args = arguments_of(func)
 
     if defaults:
-        args = args[: -len(default)]
+        args = args[: -len(defaults)]
     return args # all args without default values
 
 def missing_arguments(func: Callable[..., Any], argdict: Dict[str, Any]) -> Set[str]:

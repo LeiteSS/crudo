@@ -85,7 +85,7 @@ def prompt(
 
 def unsafe_prompt(
   questions: Union[Dict[str, Any], Iterable[Mapping[str, Any]]],
-  answer: Optional[Mapping[str, Any]] = None,
+  answers: Optional[Mapping[str, Any]] = None,
   patch_stdout: bool = False,
   true_color: bool = False,
   **kwargs: Any,
