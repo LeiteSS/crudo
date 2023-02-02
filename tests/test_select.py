@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import pytest
 
-from main import Choice
-from main import Separator
+from kuraddo.app import Choice
+from kuraddo.app import Separator
 from tests.utils import KeyInputs
 from tests.utils import feed_cli_with_input
 from tests.utils import pathched_prompt

@@ -1,23 +1,23 @@
 from prompt_toolkit.output import DummyOutput
 from pytest import fail
 
-import main
-from main.model.form import form
+import kuraddo.app as app
+from kuraddo.app.form import form
 from tests.utils import KeyInputs
 from tests.utils import execute_with_input_pipe
 
 def example_form(inp):
   return form(
-    q1=main.confirm("Hello?", input=inp, output=DummyOutput()),
-    q2=main.select(
+    q1=app.confirm("Hello?", input=inp, output=DummyOutput()),
+    q2=app.select(
       "world?", choices=["foo", "bar"], input=inp, output=DummyOutput()
     ),
   )
 
 def example_form_with_skip(inp):
   return form(
-    q1=main.confirm("Hello?", input=inp, output=DummyOutput()),
-    q2=main.select(
+    q1=app.confirm("Hello?", input=inp, output=DummyOutput()),
+    q2=app.select(
       "World?", choices=["foo", "bar"], input=inp, output=DummyOutput()
     ).skip_if(True, 42),
   )

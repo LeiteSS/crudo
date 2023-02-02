@@ -8,11 +8,11 @@ from prompt_toolkit.styles import Attrs
 from prompt_toolkit.validation import ValidationError
 from prompt_toolkit.validation import Validator
 
-from main import Choice
-from main.prompts import common
-from main.prompts.common import InquirerControl
-from main.prompts.common import build_validator
-from main.prompts.common import print_formatted_text
+from kuraddo.app import Choice
+from src.app.main.prompts import common
+from src.app.main.prompts.common import InquirerControl
+from src.app.main.prompts.common import build_validator
+from src.app.main.prompts.common import print_formatted_text
 from tests.utils import execute_with_input_pipe
 from tests.utils import prompt_toolkit_version
 

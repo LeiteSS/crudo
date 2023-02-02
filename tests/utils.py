@@ -7,9 +7,9 @@ import prompt_toolkit
 from prompt_toolkit.input.defaults import create_pipe_input
 from prompt_toolkit.output import DummyOutput
 
-from main import prompt
-from main.prompts import prompt_by_name
-from main.utils.utils import is_prompt_toolkit_v3
+from kuraddo.app import prompt
+from src.app.main.prompts import prompt_by_name
+from kuraddo.app.utils import is_prompt_toolkit_v3
 
 prompt_toolkit_version = tuple([int(v) for v in prompt_toolkit.VERSION])
 

@@ -5,8 +5,8 @@ import pytest
 from prompt_toolkit.output import DummyOutput
 from pytest import fail
 
-from main import text
-from main.utils.utils import is_prompt_toolkit_v3
+from kuraddo.app import text
+from kuraddo.app.utils import is_prompt_toolkit_v3
 from tests.utils import KeyInputs
 from tests.utils import execute_with_input_pipe
 

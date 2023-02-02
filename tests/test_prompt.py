@@ -1,7 +1,7 @@
 import pytest
 
-from main.prompt import PromptParameterException
-from main.prompt import prompt
+from kuraddo.app.prompt import PromptParameterException
+from kuraddo.app.prompt import prompt
 from tests.utils import pathched_prompt
 
 def test_missing_message():

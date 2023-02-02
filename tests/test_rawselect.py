@@ -2,7 +2,7 @@
 import uuid
 import pytest
 
-from main import Separator
+from kuraddo.app import Separator
 from tests.utils import KeyInputs
 from tests.utils import feed_cli_with_input
 

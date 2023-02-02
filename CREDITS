@@ -1,0 +1,18 @@
+	This is at least a partial credits-file of people that have
+	contributed to the success of Kuraddo project.  It is sorted 
+  by name and formatted to allow easy grepping and beautification 
+  by scripts.  The fields are: name (N), email (E), web-address
+	(W), PGP key ID and fingerprint (P), description (D), and
+	snail-mail address (S).
+	Thanks,
+
+			Leite, S. S.
+----------
+
+
+N: Silas Leite
+E: leite.silassantos@gmail.com
+D: Tired of make CRUD 
+D: and tired create, build, manage and test Spring Boot Applications 
+S: Poá, São Paulo 08567040
+S: Brazil

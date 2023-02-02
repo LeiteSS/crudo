@@ -1,4 +1,4 @@
-from main.utils import utils
+from kuraddo.app import utils
 
 def test_defaults_values_of():
   def f(a, b=2, c=None, *args, **kwargs):
