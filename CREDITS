@@ -9,10 +9,211 @@
 			Leite, S. S.
 ----------
 
+N: Aaron Jacobs
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
 
-N: Silas Leite
+N: Alexander Artemenko
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Alexander Lukanin
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Amar Paul
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Anselm Kruis
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Anthony Sottile
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Aymeric Augustin
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Bart Skowron
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Ben Bariteau
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Ben Darnell
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+D: Ben Davis
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Benjamin Loriot
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Benjamin Peterson
+D: Original creator of Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+W: https://six.readthedocs.io
+
+N: Berker Peksag
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Brett Cannon
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Cassiano Monteiro
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Chris Thunes
+D: Creator of JavaLang
+D: Javalang offers parsers and lexer to python understand Java
+
+N: David Black
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Eli Schwartz
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Erik Rose
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Gargarensis
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Hugo van Kemenada
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: immerrr again
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Ivan Levkivskyi
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: James Mills
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Jason R. Coombs
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Jingxin Zhu
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Jon  Dufresne
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Jonathan Vanasco
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: John Hawes
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+
+N: Joshua Harlow
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Jordan Moldow
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Julien Danjou
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Lee Ball
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Lucas Wiman
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Marc Abramowitz
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Max Grender-Jone
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Mirko Rossin
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Miroslav Shubernetskiy
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Ned Batchelder
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Peter Ruibal
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Pierre Grimaud
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Sandesh Chandrashekar
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: shoaniki
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Silas Santos Leite
 E: leite.silassantos@gmail.com
 D: Started this project, because was tired of make CRUD 
 D: and tired of create, build, manage and test Spring Boot Applications 
 S: Poá, São Paulo 08567040
 S: Brazil
+
+N: Sridhar Ratnakumar
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Thomas Grainger
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Tim Graham
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Tony Roberts
+D: Contributor in Javalang project
+D: Javalang offers parsers and lexer to python understand Java
+
+N: Toshiki Kataoka
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
+
+N: Victor Stinner
+D: Contributor in Six project
+D: Six project guaranteed the compatibility between Python 2 and Python 3
